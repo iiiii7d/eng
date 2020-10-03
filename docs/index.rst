@@ -5,7 +5,7 @@
 
 Welcome to eng's documentation!
 ===============================
-test1
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -14,7 +14,7 @@ test1
 
 Indices and tables
 ==================
-test2
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
