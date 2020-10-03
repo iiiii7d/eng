@@ -10,7 +10,6 @@ Welcome to eng's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   index
    intro
 
 
