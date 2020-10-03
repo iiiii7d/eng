@@ -1,3 +1,23 @@
+note: hello world
 say "Hello world"
-let <x> be "test"
+
+note: variables
+let 'x' be "test"
 say "<x>"
+
+note: repeat loops
+repeat 2 times:
+- say "this will repeat 2 times"
+- repeat 2 times:
+  - say "this will repeat 4 times"
+
+note: adding / subtracting to variables
+let 'x' be -2
+say "x is <x>"
+add 5 to 'x'
+say "5 added to x, now x is <x>"
+subtract 3.5 from 'x'
+say "3.5 subtracted from x, now x is <x>"
+
+note: manually throwing an error
+throw error 0.0
