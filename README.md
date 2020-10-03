@@ -1,19 +1,14 @@
 # eng by i____7d
 This is an attempt to create a computer language that is styled like spoken English.
 
-Current version = v0.1 (2/10/20)
+**Current version = v0.2 (3/10/20)**
 
-will add docs one day
+will add docs one day, still sussing out readthedocs
 
 ## How to use
 * Create a new file with an extension `.eng`
 * Add code
-* In the console, run `python main.py (your file)` (be sure to cd to the location of main.py first)
+* In the console, run `python eng.py (your file)` (be sure to cd to the location of eng.py first)
 * profit!
 
-## Examples
-```
-say "Hello world"
-let <x> be "test"
-say "<test>"
-```
+An example of eng script is in `example.eng`.
