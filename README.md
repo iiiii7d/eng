@@ -1,9 +1,13 @@
 # eng by i____7d
-This is an attempt to create a computer language that is styled like spoken English.
 
 **Current version = v0.2 (3/10/20)**
 
 will add docs one day, still sussing out readthedocs
+
+## About
+This is an attempt to create a computer language that is styled like spoken English.
+
+Pronounciation: 'ing', as in **Eng**lish
 
 ## How to use
 * Create a new file with an extension `.eng`
