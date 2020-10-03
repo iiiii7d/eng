@@ -6,20 +6,25 @@
 Documentation for eng v0.2
 ===============================
 
-test
-*******
+Welcome!
+********
+eng is an attempt by i____7d to create a programming language that is styled like spoken English.
 
-blah
+It was founded on the 2nd of October 2020.
+
+Want to learn eng? Get started: :ref:`eng tutorial`
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 10
    :caption: Contents:
    
-   intro
+   changelog
+   eng tutorial
+   all functions
 
 
-Indices and tables
-==================
+Other
+*****
 
 * :ref:`genindex`
 * :ref:`modindex`
