@@ -1,9 +1,4 @@
-.. eng documentation master file, created by
-   sphinx-quickstart on Sat Oct  3 11:48:41 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Documentation for eng v0.2
+Documentation for eng v0.3
 ===============================
 
 Welcome!
@@ -12,7 +7,7 @@ eng is an attempt by i____7d to create a programming language that is styled lik
 
 It was founded on the 2nd of October 2020.
 
-Want to learn eng? Get started: :ref:`eng tutorial`
+Want to learn eng? Get started: :ref:`eng_tutorial`
 
 .. toctree::
    :maxdepth: 2
@@ -20,6 +15,8 @@ Want to learn eng? Get started: :ref:`eng tutorial`
    
    changelog
    eng tutorial
+   data types
+   errors & debugging
    all functions
 
 

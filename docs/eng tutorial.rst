@@ -1,6 +1,6 @@
 eng Tutorial
 ============
-This is the tutorial for eng v0.2.
+This is the tutorial for eng v0.3.
 
 Print to console
 ----------------
@@ -25,7 +25,7 @@ Variables are an important part of every programming language. In eng, to declar
    let 'x' be 142
    set 'last letter' to "z"
 
-``let`` and ``set`` are also aliases, i.e. they mean the same thing in a different way.
+``let`` and ``set`` are also aliases, ie. they mean the same thing in a different way.
 
 It is **very** important to remember the single quote marks when declaring a variable. For example:
 ::
@@ -82,9 +82,9 @@ eng also has loops. The ``repeat`` function is used in this case. For example:
    repeat 5 times:
    - say "I will be repeated 5 times"
 
-Note the extra hyphen at the start of the ``say`` function. In English, this is like a list of things; i.e. 'Repeat this list of things 5 times'. Therefore and similarly, in eng, the hyphen indicates an indent in the code.
+Note the extra hyphen at the start of the ``say`` function. In English, this is like a list of things; ie. 'Repeat this list of things 5 times'. Therefore and similarly, in eng, the hyphen indicates an indent in the code.
 
-The hyphen is also very important. If you leave out the indent,:
+The hyphen is also very important. If you leave out the indent,
 ::
 
    repeat 5 times:
@@ -99,6 +99,26 @@ The ``repeat`` function can also be nested:
    - say "Who wants apples?"
    - repeat 3 times:
      - say "me"
+
+Forever loops
+*************
+Sometimes, you want a program to run forever. In eng, ``repeat forever`` is used:
+::
+
+   repeat forever:
+   - say "I will never stop"
+
+Time
+----
+Waiting
+*******
+When you want a program to pause, you can add a ``wait`` function to wait for a certain amount of time to pass.
+::
+
+   wait for 1 second
+   wait for 1000 milliseconds
+
+Note that the 's' at the end of 'second' and 'millisecond' is optional.
 
 Comments
 --------
@@ -117,8 +137,28 @@ Note that comments should take up its own line, and cannot be places at the end 
    note: this is correct
    say "hi" note: this is wrong and will produce an error
 
-Miscellaneous
--------------
+Jumping & Markers
+-----------------
+In eng, you can also jump to different parts of code. For example:
+::
+
+   jump to after it says hello
+   say "hello"
+   * after it says hello
+
+This will skip saying "hello", as it had jumped over it.
+
+This technique is also useful in forever loops:
+::
+
+   * before echo
+   say "echo"
+   jump to before echo
+
+
+
+Others
+------
 Manually throwing errors
 ************************
 This is mainly for checking out how error looks like. The ``throw error`` command is used. For example:

@@ -1,8 +1,8 @@
 # eng by i____7d
 
-**Current version = v0.2 (3/10/20)**
+**Current version: v0.3 (4/10/20)**
 
-will add docs one day, still sussing out readthedocs
+Documentation: https://eng.readthedocs.io/en/latest/
 
 ## About
 This is an attempt to create a computer language that is styled like spoken English.

@@ -1,6 +1,4 @@
 #eng - i____7d
-VERSION = "v0.2 (3/10/20)"
-
 import argparse
 import _engcompiler
 import traceback
@@ -8,11 +6,16 @@ import sys
 import colorama
 
 parser = argparse.ArgumentParser()
-parser.add_argument('file', metavar='f', type=str, nargs='?', help='file to run')
+parser.add_argument('file', type=str, nargs='?', help='file to run')
+parser.add_argument('-v', '--version', action='store_true', help='check version, then exit')
 args = parser.parse_args()
 
+if args.version:
+    print("eng " + _engcompiler.VERSION)
+    sys.exit()
+
 if args.file == None:
-    print("Please run this script in the command prompt instead of the python shell. Example: 'python main.py example.eng'")
+    print("Please input the file that you want to run. For example, 'python eng.py example.eng'")
     sys.exit()
 
 try:

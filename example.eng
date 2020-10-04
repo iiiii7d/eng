@@ -21,3 +21,18 @@ say "3.5 subtracted from x, now x is <x>"
 
 note: manually throwing an error
 throw error 0.0
+
+long notes ===
+this is a long comment nothing will happen here
+say "this won't say anything"
+long notes ===
+
+note: jumping & markers
+jump to next
+say "this won't say anything either"
+* next
+
+note: sleeping
+say "I shall wait"
+wait for 1 second
+say "I waited 1 second"
