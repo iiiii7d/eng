@@ -23,7 +23,7 @@ try:
         print(_engcompiler.error("0.1", 0).replace("<fileName>", args.file))
     else:
         try:
-            open(args.file, "r")
+            f = open(args.file, "r")
         except:
             print(_engcompiler.error("0.2", 0).replace("<fileName>", args.file))
         else:
@@ -32,4 +32,4 @@ except Exception as e:
     if e == KeyboardInterrupt:
         print("exited")
     else:
-     print(_engcompiler.error("0.2", 0).replace("<error>", colorama.Fore.YELLOW + traceback.format_exc()))
+     print(_engcompiler.error("0.3", 0).replace("<error>", colorama.Fore.YELLOW + traceback.format_exc()))

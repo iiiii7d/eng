@@ -256,6 +256,10 @@ def compiler(file):
                         indent = len(spaces)/2+1
                     else:
                         indent = 0
+                    
+                    while len(indenters) > 0 and indenters[0]["indent"] > indent:
+                        indenters.pop(0)
+
                     skip = True
             if skip:
                 continue
