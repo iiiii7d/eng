@@ -8,7 +8,7 @@ Note: *comment*
 ***************
 One-line comment. This will make the compiler skip the line. Cannot be placed at end of another function.
 Examples:
-"""""""""
+^^^^^^^^^
 ::
    note: adds 3 to variable x
 
@@ -23,10 +23,10 @@ Arguments:
 Examples:
 ^^^^^^^^^
 ::
-    say "hello world"
+   say "hello world"
 returns:
 ::
-    hello world
+   hello world
 
 Variables & Data
 ----------------
@@ -42,8 +42,8 @@ Arguments:
 Examples:
 ^^^^^^^^^
 ::
-    set 'x' to 334
-    let 'name' be "John"
+   set 'x' to 334
+   let 'name' be "John"
 
 add *number* to '*name*'
 ************************
@@ -57,7 +57,7 @@ Arguments:
 Examples:
 ^^^^^^^^^
 ::
-    add 5 to 'donuts'
+   add 5 to 'donuts'
 
 subtract *number* from '*name*'
 ************************
@@ -71,7 +71,7 @@ Arguments:
 Examples:
 ^^^^^^^^^
 ::
-    subtract 1 from 'timer'
+   subtract 1 from 'timer'
 
 Loops
 ----------------
@@ -86,10 +86,10 @@ Arguments:
 Examples:
 ^^^^^^^^^
 ::
-    let 'x' be 0
-    repeat 5 times:
-    - add 1 to 'x'
-    - say "The number is now <x>"
+   let 'x' be 0
+   repeat 5 times:
+   - add 1 to 'x'
+   - say "The number is now <x>"
 
 Miscellaneous
 ----------------
@@ -104,7 +104,7 @@ Arguments:
 Examples:
 ^^^^^^^^^
 ::
-    throw error 1.1
+   throw error 1.1
 returns:
 ::
-    eng error 1.1 on Line 1: No variable name specified
+   eng error 1.1 on Line 1: No variable name specified

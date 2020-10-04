@@ -15,7 +15,7 @@ It was founded on the 2nd of October 2020.
 Want to learn eng? Get started: :ref:`eng tutorial`
 
 .. toctree::
-   :maxdepth: 10
+   :maxdepth: 2
    :caption: Contents:
    
    changelog
