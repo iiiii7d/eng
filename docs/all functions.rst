@@ -138,7 +138,7 @@ Jumps to a marker.
 
 Arguments
 ^^^^^^^^^
-* **Marker ID** *ID** - the ID of the marker you want to jump to.
+* **Marker ID** *ID** - the ID of the marker you want to jump to. Note that markers ignore loops.
 
 Examples
 ^^^^^^^^

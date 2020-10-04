@@ -95,7 +95,7 @@ def compiler(file):
             lineno += 1
             continue
         a = False
-        while indent > currentIndent and not a:
+        while indent > currentIndent and not a and len(indenters) > 0:
             if indenters[0]["type"] == "forever":
                 lineno = indenters[0]["goto"]
                 a = True
@@ -124,7 +124,7 @@ def compiler(file):
             print(error("3.0", lineno))
             lineno += 1
             continue
-        elif noIndent(line) == "" or line.startswith("note:") or line.startswith("* "):
+        elif noIndent(line) == "" or noIndent(line).startswith("note:") or noIndent(line).startswith("* "):
             lineno += 1
             continue                
 
@@ -248,8 +248,13 @@ def compiler(file):
                 print(error("1.2", lineno))
             skip = False
             for l in f:
-                if l.startswith("* " + marker):
+                if noIndent(l).startswith("* " + marker):
                     lineno = f.index(l)+1
+                    spaces = l.split("- ")[0]
+                    if (spaces.isspace() or spaces == "") and l.startswith(spaces+"- "):
+                        indent = len(spaces)/2+1
+                    else:
+                        indent = 0
                     skip = True
             if skip:
                 continue
