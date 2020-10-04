@@ -1,5 +1,5 @@
 All Functions
-==================
+=============
 **This is the documentation for v0.2.** Please check if you have the correct compiler version of eng.
 
 Basics
@@ -7,8 +7,10 @@ Basics
 Note: *comment*
 ***************
 One-line comment. This will make the compiler skip the line. Cannot be placed at end of another function.
+
 Examples:
 ^^^^^^^^^
+
 ::
    note: adds 3 to variable x
 
@@ -22,6 +24,7 @@ Arguments:
 
 Examples:
 ^^^^^^^^^
+
 ::
    say "hello world"
 returns:
@@ -41,6 +44,7 @@ Arguments:
 
 Examples:
 ^^^^^^^^^
+
 ::
    set 'x' to 334
    let 'name' be "John"
@@ -56,6 +60,7 @@ Arguments:
 
 Examples:
 ^^^^^^^^^
+
 ::
    add 5 to 'donuts'
 
@@ -70,6 +75,7 @@ Arguments:
 
 Examples:
 ^^^^^^^^^
+
 ::
    subtract 1 from 'timer'
 
@@ -85,6 +91,7 @@ Arguments:
 
 Examples:
 ^^^^^^^^^
+
 ::
    let 'x' be 0
    repeat 5 times:
@@ -103,6 +110,7 @@ Arguments:
 
 Examples:
 ^^^^^^^^^
+
 ::
    throw error 1.1
 returns:
