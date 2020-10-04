@@ -108,6 +108,9 @@ def compiler(file):
                 else:
                     indent -= 1
                     indenters.pop(0)
+            elif indenters[0]["type"] == "frommarker":
+                indent -= 1
+                indenters.pop(0)
         if a:
             continue
 
@@ -257,8 +260,12 @@ def compiler(file):
                     else:
                         indent = 0
                     
-                    while len(indenters) > 0 and indenters[0]["indent"] > indent:
-                        indenters.pop(0)
+                    if indenters[0]["indent"] > indent:
+                        while len(indenters) > 0 and indenters[0]["indent"] > indent:
+                            indenters.pop(0)
+                    elif indenters[0]["indent"] < indent:
+                        while indenters[0]["indent"] < indent:
+                            indenters.insert(0, {"type": "frommarker", "indent": indenters[0]["indent"]+1})
 
                     skip = True
             if skip:
