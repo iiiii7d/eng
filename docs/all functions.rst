@@ -12,6 +12,7 @@ Examples:
 ^^^^^^^^^
 
 ::
+
    note: adds 3 to variable x
 
 say *text*
@@ -26,9 +27,12 @@ Examples:
 ^^^^^^^^^
 
 ::
+
    say "hello world"
+
 returns:
 ::
+
    hello world
 
 Variables & Data
@@ -46,6 +50,7 @@ Examples:
 ^^^^^^^^^
 
 ::
+
    set 'x' to 334
    let 'name' be "John"
 
@@ -62,10 +67,11 @@ Examples:
 ^^^^^^^^^
 
 ::
+
    add 5 to 'donuts'
 
 subtract *number* from '*name*'
-************************
+*******************************
 Subtracts a number from a variable.
 
 Arguments:
@@ -77,6 +83,7 @@ Examples:
 ^^^^^^^^^
 
 ::
+
    subtract 1 from 'timer'
 
 Loops
@@ -93,6 +100,7 @@ Examples:
 ^^^^^^^^^
 
 ::
+
    let 'x' be 0
    repeat 5 times:
    - add 1 to 'x'
@@ -112,7 +120,10 @@ Examples:
 ^^^^^^^^^
 
 ::
+
    throw error 1.1
+
 returns:
+
 ::
    eng error 1.1 on Line 1: No variable name specified

@@ -4,10 +4,14 @@ This is the tutorial for eng v0.2.
 
 Print to console
 ----------------
-As always, when learning a new language, one always learns how to print something to console. In eng, ``say`` is used to print things to the console. For example:::
+As always, when learning a new language, one always learns how to print something to console. In eng, ``say`` is used to print things to the console. For example:
+::
+
    say "hello world"
 
-You can also put other stuff inside too:::
+You can also put other stuff inside too:
+::
+
    say 1234567890
    say 3.141592653
 
@@ -15,27 +19,38 @@ Variables
 ---------
 Declaring Variables
 *******************
-Variables are an important part of every programming language. In eng, to declare a variable, use ``let`` or ``set``. For example:::
+Variables are an important part of every programming language. In eng, to declare a variable, use ``let`` or ``set``. For example:
+::
+
    let 'x' be 142
    set 'last letter' to "z"
 
 ``let`` and ``set`` are also aliases, i.e. they mean the same thing in a different way.
 
-It is **very** important to remember the single quote marks when declaring a variable. For example:::
+It is **very** important to remember the single quote marks when declaring a variable. For example:
+::
+
    let x be 142
-returns::
+
+returns:
+::
+
    eng error 1.1 on Line 25: No variable name specified
 
 This is because ``x`` is not recognised as a variable.
 
-Variables can also be dynamically named:::
+Variables can also be dynamically named:
+::
+
    let 'var1' be "var2"
    let '<var1>' be "apple"
    say "Variable 1 is <var1> and Variable 2 is <<var1>>"
 
 Outputting Variables
 ********************
-To output variables, simply state the name of the variable in between angle brackets, like this:::
+To output variables, simply state the name of the variable in between angle brackets, like this:
+::
+
    let 'apples' be 3
    say "I have <apples> apples"
 
@@ -43,13 +58,17 @@ Adding and subtracting to variables
 ***********************************
 You can also add to and subtract from variables in eng. For addition, ``add`` is used, and for subtraction, ``subtract`` is used.
 
-Here is an example of additon:::
+Here is an example of additon:
+::
+
    let 'apples' be 3
    say "I have <apples> apples"
    add 3 to 'apples'
    say "I now have <apples> apples"
 
-Here is an example of subtraction:::
+Here is an example of subtraction:
+::
+
    let 'apples' be 3
    say "I have <apples> apples"
    subtract 3 from 'apples'
@@ -57,19 +76,25 @@ Here is an example of subtraction:::
 
 Loops
 -----
-eng also has loops. The ``repeat`` function is used in this case. For example:::
+eng also has loops. The ``repeat`` function is used in this case. For example:
+::
+
    repeat 5 times:
    - say "I will be repeated 5 times"
 
 Note the extra hyphen at the start of the ``say`` function. In English, this is like a list of things; i.e. 'Repeat this list of things 5 times'. Therefore and similarly, in eng, the hyphen indicates an indent in the code.
 
-The hyphen is also very important. If you leave out the indent,::
+The hyphen is also very important. If you leave out the indent,:
+::
+
    repeat 5 times:
    say "I will be repeated 5 times"
 
 the ``say`` function will only be executed once. This is because there is nothing in the ``repeat`` function's list.
 
-The ``repeat`` function can also be nested:::
+The ``repeat`` function can also be nested:
+::
+
    repeat 2 times:
    - say "Who wants apples?"
    - repeat 3 times:
@@ -77,14 +102,18 @@ The ``repeat`` function can also be nested:::
 
 Comments
 --------
-Like a good programmer, it is common practice to include comments in the code. The ``note`` function is used in this case. For example:::
+Like a good programmer, it is common practice to include comments in the code. The ``note`` function is used in this case. For example:
+::
+
    note: this adds 1 to variable x 5 times
    let 'x' be 0
    repeat 5 times:
    - add 1 to 'x'
    - say <x>
 
-Note that comments should take up its own line, and cannot be places at the end of another command:::
+Note that comments should take up its own line, and cannot be places at the end of another command:
+::
+
    note: this is correct
    say "hi" note: this is wrong and will produce an error
 
@@ -92,7 +121,9 @@ Miscellaneous
 -------------
 Manually throwing errors
 ************************
-This is mainly for checking out how error looks like. The ``throw error`` command is used. For example:::
+This is mainly for checking out how error looks like. The ``throw error`` command is used. For example:
+::
+
    throw error 1.1
 
 Conclusion
