@@ -10,7 +10,6 @@ One-line comment. This will make the compiler skip the line. Cannot be placed at
 
 Examples:
 ^^^^^^^^^
-
 ::
 
    note: adds 3 to variable x
@@ -25,7 +24,6 @@ Arguments:
 
 Examples:
 ^^^^^^^^^
-
 ::
 
    say "hello world"
@@ -48,7 +46,6 @@ Arguments:
 
 Examples:
 ^^^^^^^^^
-
 ::
 
    set 'x' to 334
@@ -65,7 +62,6 @@ Arguments:
 
 Examples:
 ^^^^^^^^^
-
 ::
 
    add 5 to 'donuts'
@@ -81,7 +77,6 @@ Arguments:
 
 Examples:
 ^^^^^^^^^
-
 ::
 
    subtract 1 from 'timer'
@@ -98,7 +93,6 @@ Arguments:
 
 Examples:
 ^^^^^^^^^
-
 ::
 
    let 'x' be 0
@@ -118,12 +112,11 @@ Arguments:
 
 Examples:
 ^^^^^^^^^
-
 ::
 
    throw error 1.1
 
 returns:
-
 ::
+
    eng error 1.1 on Line 1: No variable name specified
