@@ -260,12 +260,13 @@ def compiler(file):
                     else:
                         indent = 0
                     
-                    if indenters[0]["indent"] > indent:
+                    if len(indenters) > 0 and indenters[0]["indent"] > indent:
                         while len(indenters) > 0 and indenters[0]["indent"] > indent:
                             indenters.pop(0)
-                    elif indenters[0]["indent"] < indent:
-                        while indenters[0]["indent"] < indent:
-                            indenters.insert(0, {"type": "frommarker", "indent": indenters[0]["indent"]+1})
+                    elif len(indenters) == 0 or indenters[0]["indent"] < indent:
+                        while len(indenters) == 0 or indenters[0]["indent"] < indent:
+                            prev = indenters[0]["indent"] if len(indenters) > 0 else 0
+                            indenters.insert(0, {"type": "frommarker", "indent": prev+1})
 
                     skip = True
             if skip:
