@@ -1,6 +1,6 @@
 All Functions
 =============
-**This is the documentation for v0.2.** Please check if you have the correct compiler version of eng.
+**This is the documentation for v0.3.1.** Please check if you have the correct compiler version of eng.
 
 Output
 ------

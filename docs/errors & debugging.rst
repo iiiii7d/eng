@@ -1,6 +1,6 @@
 Errors & Debugging
 ==================
-This is a list of all eng errors as of v0.3, and how to troubleshoot them.
+This is a list of all eng errors as of v0.3.1, and how to troubleshoot them.
 
 0.x: Compiler errors
 --------------------
@@ -28,19 +28,35 @@ Recreate
 ::
 
    (This is typed in console)
-   python eng.py abcd.e
+   python eng.py foo.bar
 
 Troubleshooting
 ^^^^^^^^^^^^^^^
 * Make sure the extension of the file you want to run is ".eng".
 
-0.2: Internal compiler code error: *<error>*
+0.2: *<fileName>* does not exist
+*************************************
+This error is thrown when a file that you want to run does not exist.
+
+Recreate
+^^^^^^^^
+::
+
+   (This is typed in console)
+   python eng.py foobar.eng
+
+Troubleshooting
+^^^^^^^^^^^^^^^
+* Make sure your file exists.
+* You could also have typed the name of the file wrongly.
+
+0.3: Internal compiler code error: *<error>*
 ********************************************
 This error is thrown when the compiler itself has an error.
 
 Troubleshooting
 ^^^^^^^^^^^^^^^
-* Open an issue on eng's Github repository, and paste in the error that error 0.2 gave you.
+* Open an issue on eng's Github repository, and paste in the error that error 0.3 gave you.
 
 1.x: Variable & data errors
 ---------------------------

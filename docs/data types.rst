@@ -1,6 +1,6 @@
 Data Types
 ==========
-Here is a list of all the data types of eng, as of v0.3.
+Here is a list of all the data types of eng, as of v0.3.1.
 
 The names of data types are also massively simplified in eng to reduce the feel of a programming language and to make it more similar to normal English.
 

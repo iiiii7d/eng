@@ -1,5 +1,5 @@
 #eng - i____7d
-VERSION = "v0.3 (4/10/20)"
+VERSION = "v0.3.1 (4/10/20)"
 
 import colorama
 import re
@@ -9,7 +9,8 @@ def error(code, line):
     errors = {
         "0.0": "Invalid error code: <invalidCode>",
         "0.1": "<fileName> is not an .eng file",
-        "0.2": "Internal compiler code error:\n<error>",
+        "0.2": "<fileName> does not exist",
+        "0.3": "Internal compiler code error:\n<error>",
         "1.0": "Command not recognised: \"<command>\"",
         "1.1": "No variable name specified",
         "1.2": "No value specified",

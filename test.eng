@@ -1,6 +1,0 @@
-let 'x' be 0
-repeat 2 times:
-- * back
-add 1 to 'x'
-say <x>
-jump to back

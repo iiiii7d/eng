@@ -11,6 +11,10 @@ v0.3 (4/10/20)
 * Added waits
 * Compiler launcher now shows the version as well (Use ``python eng.py -v``)
 
+v0.3.1 (4/10/20)
+^^^^^^^^^^^^^^^^
+* Fixed bug where opening file that does not exist give internal compiler code error
+
 v0.2 (3/10/20)
 **************
 * Added documentation

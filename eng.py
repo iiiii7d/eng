@@ -22,7 +22,12 @@ try:
     if not args.file.endswith(".eng"):
         print(_engcompiler.error("0.1", 0).replace("<fileName>", args.file))
     else:
-        _engcompiler.compiler(args.file)
+        try:
+            open(args.file, "r")
+        except:
+            print(_engcompiler.error("0.2", 0).replace("<fileName>", args.file))
+        else:
+            _engcompiler.compiler(args.file)
 except Exception as e:
     if e == KeyboardInterrupt:
         print("exited")
