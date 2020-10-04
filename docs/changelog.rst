@@ -1,6 +1,7 @@
 Changelog
 =========
-
+v0.x (Beta)
+-----------
 v0.3 (4/10/20)
 **************
 * Several bug fixes here and there
