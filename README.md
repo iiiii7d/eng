@@ -1,3 +1,8 @@
+# Hello from the future o/
+Eng was created when I didn't fully understand language creation, yes this is supposed to be called an "interpreter" :p
+
+If you'd like to see a more legitimate proglang, check out [Zyxt](https://github.com/iiiii7d/zyxtlang)
+
 # eng by i____7d
 
 **Current version: v0.3 (4/10/20)**
