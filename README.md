@@ -1,5 +1,5 @@
 # Hello from the future o/
-Eng was created when I didn't fully understand language creation, yes this is supposed to be called an "interpreter" :p
+Eng was created when I didn't fully understand language creation (yes this was supposed to be labelled as an interpreter :p)
 
 If you'd like to see a more legitimate proglang, check out [Zyxt](https://github.com/iiiii7d/zyxtlang)
 
